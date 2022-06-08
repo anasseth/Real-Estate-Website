@@ -1,0 +1,94 @@
+* {
+  color: #d3d3d3;
+  font-weight: 500;
+}
+.footerContainer {
+  width: 100%;
+}
+.body_div {
+  margin: 0px;
+  padding: 10px 20px 10px 40px;
+  background: linear-gradient(180deg, #3c504d 0%, #4b6663 100%);
+}
+
+.search_div {
+  width: 300px;
+  height: 40px;
+  background: #dcedf6;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+    -1px -1px 2px rgba(88, 95, 98, 0.5),
+    inset -5px 5px 10px rgba(88, 95, 98, 0.2),
+    inset 5px -5px 10px rgba(88, 95, 98, 0.2),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.9),
+    inset 5px 5px 13px rgba(88, 95, 98, 0.9);
+  border-radius: 2px;
+  margin-right: 10px;
+  padding: 0px 10px;
+}
+
+.search_input .input_field_box {
+  width: 100%;
+  letter-spacing: 0.22em;
+  font-family: "Rajdhani", sans-serif;
+  margin-right: 1%;
+}
+
+::ng-deep .search_input .mat-form-field {
+  color: black;
+  resize: none !important;
+}
+
+::ng-deep .search_input .mat-form-field-underline {
+  background-color: black !important;
+  display: none;
+}
+
+::ng-deep .search_input .mat-form-field-ripple {
+  background-color: black !important;
+  display: none;
+}
+
+.Search {
+  height: 95%;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.showOnDesktop {
+  display: block;
+  visibility: visible;
+}
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .body_div {
+    margin: 0px;
+    padding: 10px 20px 10px 20px;
+  }
+  .search_div {
+    width: 70%;
+    height: 45px;
+    background: #dcedf6;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+      -1px -1px 2px rgba(88, 95, 98, 0.5),
+      inset -5px 5px 10px rgba(88, 95, 98, 0.2),
+      inset 5px -5px 10px rgba(88, 95, 98, 0.2),
+      inset -5px -5px 10px rgba(255, 255, 255, 0.9),
+      inset 5px 5px 13px rgba(88, 95, 98, 0.9);
+    border-radius: 2px;
+    margin-right: 10px;
+  }
+  .showOnDesktop {
+    display: none;
+    visibility: hidden;
+  }
+  .showOnMobile {
+    display: block;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,97 @@
+.HomeSubContainerThree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  height: fit-content;
+  min-height: 750px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  //   border: 2px solid red;
+}
+#owl-two {
+  //   transform: translateY(-600px);
+}
+.imageSlide {
+  height: 400px;
+  margin: 45px;
+  //   border: 2px solid white;
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.bg-image {
+  /* The image used */
+  background-image: url("../../../assets/images/c1d582de-2b6f-4e6a-93e4-46ffd108de06----1.jpg");
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.owl-next {
+  position: absolute !important;
+  top: 37% !important;
+  right: 0 !important;
+}
+
+.owl-prev {
+  position: absolute !important;
+  top: 37% !important;
+  left: 0 !important;
+}
+.DetailButtonContainer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: right;
+  z-index: 2;
+  position: absolute;
+  bottom: 35px;
+  right: 50px;
+  button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #ec7063;
+    border: 2px solid #d65648;
+    border-top: 2px solid #ec7063;
+    border-left: 2px solid #ec7063;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ec7063, #ee5c4c);
+    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .imageSlide {
+    height: 300px;
+    margin: 25px;
+  }
+  .DetailButtonContainer {
+    bottom: 1%;
+    right: 1%;
+    button {
+      font-size: 13px;
+      padding: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

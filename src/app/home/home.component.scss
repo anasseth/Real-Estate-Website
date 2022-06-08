@@ -1,0 +1,893 @@
+.HomeContainer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+a:focus {
+  color: #373e18;
+}
+section {
+  float: left;
+  width: 100%;
+  padding-bottom: 3em;
+}
+h2 {
+  color: #1a0e0e;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+h2 span {
+  display: block;
+  padding: 0;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+#float-right {
+  float: right;
+}
+
+.SliderContainer {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+}
+.LetsDiscussButton {
+  position: absolute;
+  bottom: 70px;
+  right: 100px;
+  background-color: #ec7063;
+  border: 2px solid white;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  //   box-shadow: 0px 0px 17px 13px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -38px -25px 18px -7px rgba(0, 0, 0, 0.1);
+}
+
+/* ******************************************************
+	Script Top
+*********************************************************/
+
+.ScriptTop {
+  background: #fff none repeat scroll 0 0;
+  float: left;
+  font-size: 0.69em;
+  font-weight: 600;
+  line-height: 2.2;
+  padding: 12px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* To Navigation Style 1*/
+.ScriptTop ul {
+  margin: 24px 0;
+  padding: 0;
+  text-align: left;
+}
+.ScriptTop li {
+  list-style: none;
+  display: inline-block;
+}
+.ScriptTop li a {
+  background: #6a4aed none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.ScriptTop li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ******************************************************
+	Script Header
+*********************************************************/
+
+.ScriptHeader {
+  float: left;
+  width: 100%;
+  padding: 2em 0;
+}
+.rt-heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.Scriptcontent {
+  line-height: 28px;
+}
+.ScriptHeader h1 {
+  font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro",
+    "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue",
+    Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #6a4aed;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  line-height: normal;
+}
+.ScriptHeader h2 {
+  color: #312c8f;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 0;
+  line-height: normal;
+}
+.ScriptHeader h1 span {
+  display: block;
+  padding: 0;
+  font-size: 22px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.ScriptHeader span {
+  display: block;
+  padding: 0;
+  font-size: 22px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+/* ******************************************************
+	Live Demo
+*********************************************************/
+
+/* ******************************************************
+	Responsive Grids
+*********************************************************/
+
+.rt-container {
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.rt-row:before,
+.rt-row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.rt-row:after {
+  clear: both;
+}
+[class^="col-rt-"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  min-height: 1px;
+  position: relative;
+}
+
+.HomeSubContainerOne {
+  // width: 100%;
+  height: fit-content;
+  padding: 50px;
+  //   border: 1px solid gray;
+  padding-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.CardandMap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  min-width: 550px;
+}
+.Card {
+  width: 100%;
+  height: 250px;
+  border-left: 6px solid #4c9398;
+  border-top: 6px solid #4c9398;
+  border-bottom: 6px solid #407a84;
+  border-right: 6px solid #407a84;
+  background: linear-gradient(135deg, #407a84, #5eb0bb);
+  box-shadow: inset 0px 0px 14px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  h2 {
+    text-align: center;
+    color: #e9fbfc;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-size: 23px;
+  }
+}
+
+.MapPopup {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+.LargeMap {
+  // max-width: 700px;
+  width: 50%;
+  // max-height: 550px;
+  height: 60%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: -4px -3px 37px 32px rgb(152 152 152 / 24%);
+}
+.ButtonForDirection {
+  width: 80%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: auto;
+  padding-top: 20px;
+  span {
+    color: #844044;
+    font-size: 22px;
+    padding-right: 5px;
+    background-color: #efd5d2;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 4px #8a8a8ab0;
+    cursor: pointer;
+  }
+}
+.DetailButtonContainer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: right;
+  button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #ec7063;
+    border: 2px solid #d65648;
+    border-top: 2px solid #ec7063;
+    border-left: 2px solid #ec7063;
+    color: white;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    // border-radius: 20px;
+    background: linear-gradient(45deg, #ec7063, #ee5c4c);
+    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+.DirectionCardContainer {
+  border-radius: 10px;
+  box-shadow: 5px 9px 29px 37px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  height: 60%;
+  max-height: 210px;
+  background-color: #d0d1cc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: inset 0px 0px 8px 4px #b9ad91;
+}
+.DirectionPopup {
+  width: 100%;
+  height: 100%;
+  background-color: #d0d1cc;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  // box-shadow: 5px 9px 29px 37px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 8px 4px #b9ad91;
+  input {
+    margin: auto;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    // box-shadow: inset 0px 0px 12px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 10px 4px #dcd9d2;
+    color: #667f82;
+    font-size: 14px;
+  }
+  p {
+    color: #667f82;
+    font-size: 14px;
+    font-weight: 700px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+agm-map {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Map {
+  width: 100%;
+  min-width: 500px;
+  min-height: 300px;
+  margin-top: 50px;
+  text-align: center;
+  img {
+    width: 100%;
+    box-shadow: 0px 0px 33px 4px rgba(30, 97, 61, 0.75);
+    -webkit-box-shadow: 0px 0px 33px 4px rgba(30, 97, 61, 0.75);
+    -moz-box-shadow: 0px 0px 33px 4px rgba(30, 97, 61, 0.75);
+  }
+}
+
+.CardUpperHalfPortion {
+  height: 40%;
+  position: relative;
+  //   border: 1px solid black;
+
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: space-evenly;
+  //   align-items: center;
+}
+.CardLowerHalfPortion {
+  height: 40%;
+  //   border: 1px solid black;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.TextContainerOne {
+  width: 50%;
+  height: 95%;
+  //   border: 1px solid black;
+  padding: 40px;
+  h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+    color: #1c4e55;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 70px;
+    margin-top: 0px;
+  }
+  h2 {
+    font-size: 23px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    color: #1c4e55;
+    font-weight: 400;
+    font-style: italic;
+    // line-height: 80px;
+  }
+}
+.ListItem {
+  display: flex;
+  width: 45%;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+.Feature {
+  color: #e9fbfc;
+  font-size: 17px;
+  height: 40px;
+  width: 90%;
+  span {
+    font-size: 30px;
+    vertical-align: sub;
+    padding-right: 10px;
+  }
+  font-family: "Poppins", sans-serif;
+}
+.InnerCard {
+  position: absolute;
+  height: 50px;
+  width: 40%;
+  font-size: 34px;
+  text-align: center;
+  border: 2px solid #1c4e55;
+  top: 15px;
+  right: -50px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: linear-gradient(170deg, #1c4e55, #447f8b);
+  box-shadow: inset 0px 0px 14px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+  -webkit-box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+  -moz-box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+}
+.HomeSubContainerTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.HSCTOne {
+  width: 45%;
+  padding: 20px;
+  padding-top: 0px;
+  p {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    color: #1c4e55;
+    font-style: italic;
+  }
+}
+.HSCTTwo {
+  width: 45%;
+  padding: 10px;
+  h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+    color: #1c4e55;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+.ListCourtesyUpperPortion {
+  margin-top: 20px;
+  height: 40px;
+  width: 70%;
+  background-color: #548791;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+.ListCourtesyLowerPortion {
+  height: 40px;
+  border-top: 2px solid white;
+  width: 70%;
+  background-color: #709ea8;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 7px;
+  p {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.HomeSubContainerFour {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  height: fit-content;
+  min-height: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.SeeAll {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  p {
+    color: #3d2f26;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 20px;
+    font-weight: 600;
+  }
+  button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    outline: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #b9adad;
+    border-right: 2px solid #b9adad;
+    color: #3d2f26;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #f3e5e5, #d9cfce);
+  }
+}
+
+@media (min-width: 768px) {
+  .rt-container {
+    width: 750px;
+  }
+  [class^="col-rt-"] {
+    float: left;
+    width: 49.9999999999%;
+  }
+  .col-rt-6,
+  .col-rt-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rt-container {
+    width: 1170px;
+  }
+  .col-rt-1 {
+    width: 16.6%;
+  }
+  .col-rt-2 {
+    width: 30.33%;
+  }
+  .col-rt-3 {
+    width: 50%;
+  }
+  .col-rt-4 {
+    width: 67.664%;
+  }
+  .col-rt-5 {
+    width: 83.33%;
+  }
+}
+
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+  .ScriptTop h1,
+  .ScriptTop ul {
+    text-align: center;
+  }
+  .ScriptTop h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .ScriptTop ul {
+    margin-top: 12px;
+  }
+
+  .ScriptHeader h1,
+  .ScriptHeader h2,
+  .scriptnav ul {
+    text-align: center;
+  }
+  .scriptnav ul {
+    margin-top: 12px;
+  }
+  #float-right {
+    float: none;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 600px;
+  margin-top: 70px;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+.slide > div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  animation: slide 25s infinite;
+  opacity: 0;
+  background-position: center;
+}
+.slide > div:nth-child(2) {
+  animation-delay: 5s;
+}
+.slide > div:nth-child(3) {
+  animation-delay: 10s;
+}
+.slide > div:nth-child(4) {
+  animation-delay: 15s;
+}
+.slide > div:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.bottomList {
+  width: 45% !important;
+}
+
+@keyframes slide {
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.1);
+  }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .TextContainerOne {
+    width: 50%;
+    height: 95%;
+    padding: 20px;
+    //   border: 1px solid black;
+    padding: 40px;
+    h1 {
+      font-size: 53px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  .HomeSubContainerOne {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .TextContainerOne {
+    width: 90%;
+    margin: auto;
+    h1 {
+      font-size: 43px;
+    }
+    h2 {
+      font-size: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .LargeMap {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .HomeSubContainerTwo {
+    width: 90%;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+  .HSCTOne {
+    width: 90%;
+  }
+  .HSCTTwo {
+    width: 90%;
+  }
+  .ListCourtesyLowerPortion {
+    width: 90%;
+  }
+  .ListCourtesyUpperPortion {
+    width: 90%;
+  }
+  .LargeMap {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .InnerCard {
+    right: -30px;
+  }
+  .DirectionCardContainer {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .InnerCard {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .DetailButtonContainer {
+    padding-right: 0px;
+    button {
+      padding: 7px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .CardandMap {
+    width: 105%;
+    min-width: auto;
+  }
+  .Card {
+    width: 100%;
+    height: 219px;
+    h2 {
+      font-weight: 550;
+      font-size: 16px;
+    }
+  }
+
+  .CardUpperHalfPortion {
+    height: 40%;
+    position: relative;
+  }
+  .CardLowerHalfPortion {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .ListItem {
+    width: 65% !important;
+    justify-content: left;
+  }
+  .Feature {
+    color: #e9fbfc;
+    font-size: 12px;
+    height: 40px;
+    width: 99%;
+    span {
+      font-size: 20px;
+      vertical-align: sub;
+      padding-right: 10px;
+    }
+    font-family: "Poppins", sans-serif;
+  }
+  .InnerCard {
+    position: absolute;
+    height: 35px;
+    width: 36%;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #1c4e55;
+    top: 15px;
+    right: 1px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  .bottomList {
+    width: 45% !important;
+  }
+  .Map {
+    min-width: auto;
+  }
+  .TextContainerOne {
+    // width: 50%;
+    height: 95%;
+    padding: 20px;
+    padding: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    h1 {
+      font-size: 33px;
+      line-height: 40px;
+    }
+  }
+  .HomeSubContainerTwo {
+    width: 99%;
+  }
+  .LetsDiscussButton {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

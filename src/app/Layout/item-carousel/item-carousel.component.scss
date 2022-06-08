@@ -1,0 +1,163 @@
+.HouseCard {
+  //   width: 27%;
+  margin: 30px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  border: 1px solid white;
+  height: fit-content;
+  padding: 10px;
+  background-color: #f7f7f7;
+  position: relative;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: -7px 9px 10px -4px rgba(112, 112, 112, 0.75);
+  -webkit-box-shadow: -7px 9px 10px -4px rgba(112, 112, 112, 0.75);
+  -moz-box-shadow: -7px 9px 10px -4px rgba(112, 112, 112, 0.75);
+}
+.Stroke {
+  height: 2px;
+  width: 13%;
+  /* margin: auto; */
+  border: 0.4px solid #17393d;
+  margin-top: 10px;
+  margin-left: 50%;
+}
+.SimilarHouses {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  h1 {
+    color: #17393d;
+    font-size: 23px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 4px;
+  }
+}
+.owl-stage-outer {
+  padding: 50px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
+  background-color: red;
+}
+// div#owl-one {
+//   background-color: red;
+// }
+.PendingButtonContainer {
+  //   position: absolute;
+  //   top: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+agm-map {
+  height: 100%;
+}
+.PendingStatus {
+  height: 30px;
+  width: fit-content;
+  padding-left: 17px;
+  padding-right: 30px;
+  border-radius: 15px;
+  border: none;
+  color: #373e18;
+  font-weight: 500;
+  background-color: #f8f677;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: -4px 9px 10px -4px rgba(0, 0, 0, 0.596);
+  -webkit-box-shadow: -4px 9px 10px -4px rgba(0, 0, 0, 0.596);
+  -moz-box-shadow: -4px 9px 10px -4px rgba(0, 0, 0, 0.596);
+}
+.ImageAndPriceContainer {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.ImageBox {
+  width: 85%;
+  margin: auto;
+  img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+  }
+}
+.PriceBox {
+  position: absolute;
+  bottom: 0px;
+  left: -30px;
+  height: 40px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border: 2px solid #17393d;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 22px;
+  padding-top: 2px;
+  border-radius: 10px;
+  background: linear-gradient(170deg, #1c4e55, #1c4e55);
+  box-shadow: inset 0px 0px 14px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+  -webkit-box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+  -moz-box-shadow: 10px 10px 51px 0px rgb(28 74 51 / 75%);
+}
+.FeatureContainerOne {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  a {
+    font-family: "Poppins", sans-serif;
+    color: #17393d;
+    font-weight: 600;
+    font-style: italic;
+    // font-size: 14px;
+  }
+  span {
+    vertical-align: sub;
+    padding-right: 10px;
+  }
+}
+.FeatureContainerTwo {
+  justify-content: left;
+}
+.FeatureContainerThree {
+  justify-content: left;
+}
+.EmailAgent {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  button {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #e17e77;
+    border-top: 2px solid #c2736d;
+    border-left: 2px solid #c2736d;
+    color: white;
+    padding: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    // border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #eb8c87, #a75e59);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .HouseCard {
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,196 @@
+<div class="HomeContainer">
+  <div class="SliderContainer">
+    <div class="slide">
+      <div
+        style="
+          background-image: url(https://mediall.rapmls.com/cincy/listingpics/bigphoto/2022/04/22/87fe0fed-95ee-4cde-8386-3a36ce7b6bce.jpg);
+        "
+      ></div>
+      <div
+        style="
+          background-image: url(https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&w=1000&q=80);
+        "
+      ></div>
+      <div
+        style="
+          background-image: url(https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
+        "
+      ></div>
+      <div
+        style="
+          background-image: url(https://wallpaperaccess.com/full/1404008.jpg);
+        "
+      ></div>
+      <div
+        style="
+          background-image: url(https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80);
+        "
+      ></div>
+    </div>
+    <button class="LetsDiscussButton">Let's Discuss</button>
+  </div>
+  <div class="HomeSubContainerOne">
+    <div class="CardandMap wow animate__animated animate__backInRight">
+      <div class="Card">
+        <h2>4035 Acadia Lane Manson OH 45040</h2>
+        <div class="CardUpperHalfPortion">
+          <div class="ListItem" style="width: 60%">
+            <div class="Feature">
+              <span class="material-icons"> hotel </span> 3 Beds
+            </div>
+            <div class="Feature">
+              <span class="material-icons"> bathtub </span> 2 Baths ( 2 Full, 0
+              Partial)
+            </div>
+          </div>
+          <div class="InnerCard">$ <b>666,900</b></div>
+        </div>
+        <div class="CardLowerHalfPortion">
+          <div class="ListItem bottomList">
+            <div class="Feature">
+              <span class="material-icons"> aspect_ratio </span> 2,448 Sq,ft
+            </div>
+            <div class="Feature">
+              <span class="material-icons"> local_taxi </span> 2 Garages
+            </div>
+          </div>
+          <div class="ListItem bottomList">
+            <div class="Feature">
+              <span class="material-icons"> business </span> Days on Market
+            </div>
+            <div class="Feature">
+              <span class="material-icons"> calendar_month </span> Built Year
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Map">
+        <div style="width: auto; height: 300px; margin: auto">
+          <agm-map
+            [latitude]="lat"
+            [longitude]="lng"
+            [zoom]="zoom"
+            [disableDefaultUI]="false"
+            [zoomControl]="false"
+            (mapClick)="mapClicked($event)"
+          >
+            <agm-circle
+              [latitude]="lat + 0.3"
+              [longitude]="lng"
+              [radius]="5000"
+              [fillColor]="'red'"
+              [circleDraggable]="true"
+              [editable]="true"
+            >
+            </agm-circle>
+          </agm-map>
+        </div>
+      </div>
+    </div>
+    <div
+      class="TextContainerOne wow animate__animated animate__fadeInDown animate__slower"
+    >
+      <h1>Here the Main Info About The House will be highlighted</h1>
+      <h2>
+        Details: <br />
+        “Remodeled to perfection! This beautiful home is located close to
+        shopping and dining. Here are just a few of its wonderful features: cozy
+        fireplace, new kitchen cabinets, stainless steel sink, modern quartz
+        counter tops, wood flooring, remodeled bathrooms, freshly painted,
+        central a/c, attached two-car garage, large back yard, and so much
+        more!”
+      </h2>
+    </div>
+  </div>
+  <div class="HomeSubContainerTwo">
+    <div class="HSCTOne wow animate__animated animate__backInRight">
+      <img
+        src="../../assets/images/fotter_image1-removebg-preview.png"
+        alt=""
+        style="margin-bottom: 20px"
+      />
+      <p>
+        The data relating to real estate for sale on this web site comes in part
+        from the Broker Reciprocity™ program of the Multiple Listing Service of
+        Greater Cincinnati. Real estate listings held by brokerage firms other
+        than Star. All information deemed reliable but not guaranteed. All
+        properties are subject to prior sale, change or withdrawal. Neither
+        listing broker(s) or information provider(s) shall be responsible for
+        any
+      </p>
+    </div>
+    <div class="HSCTTwo wow animate__animated animate__backInLeft">
+      <h2>
+        Listing <br />
+        Courtesy of :
+      </h2>
+      <div class="table">
+        <div class="ListCourtesyUpperPortion">
+          <p>Re/Max time</p>
+          <p>513-392-9472</p>
+        </div>
+        <div class="ListCourtesyLowerPortion">
+          <p>List Agent Mls Id</p>
+          <p>513-392-9472</p>
+        </div>
+      </div>
+      <div class="DetailButtonContainer">
+        <button>Detail</button>
+      </div>
+    </div>
+  </div>
+
+  <app-image-slider></app-image-slider>
+  <app-item-carousel></app-item-carousel>
+
+  <div class="SeeAll">
+    <p>3/23</p>
+    <button>See All</button>
+  </div>
+  <app-footer></app-footer>
+</div>
+<!-- box-shadow: 5px 9px 29px 37px rgba(0, 0, 0, 0.1); -->
+<div
+  class="MapPopup slide-in-bottom"
+  *ngIf="isShowLargeMap"
+  (click)="isShowLargeMap = !isShowLargeMap"
+>
+  <div class="LargeMap">
+    <div class="DirectionCardContainer">
+      <div class="DirectionPopup">
+        <input type="text" placeholder="Choose Starting Point" />
+        <input type="text" placeholder="Choose Your Destination" />
+        <div class="ButtonForDirection">
+          <span class="material-icons"> traffic </span>
+
+          <span class="material-icons"> directions_bike </span>
+
+          <span class="material-icons"> directions_walk </span>
+
+          <span class="material-icons"> directions_bus_filled </span>
+
+          <span class="material-icons"> directions_car </span>
+        </div>
+        <p>By Cycling it takes 1 Hr & 45 mins</p>
+      </div>
+    </div>
+    <agm-map
+      [latitude]="lat"
+      [longitude]="lng"
+      [zoom]="zoom"
+      [disableDefaultUI]="false"
+      [zoomControl]="false"
+      (mapClick)="mapClicked($event)"
+    >
+      <agm-circle
+        [latitude]="lat + 0.3"
+        [longitude]="lng"
+        [radius]="5000"
+        [fillColor]="'red'"
+        [circleDraggable]="true"
+        [editable]="true"
+      >
+      </agm-circle>
+    </agm-map>
+  </div>
+</div>

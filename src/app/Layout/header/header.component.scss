@@ -1,0 +1,60 @@
+.HeaderContainer {
+  position: fixed;
+  background-color: #184346;
+  height: 75px;
+  color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.LogoContainer {
+  height: 90%;
+  width: 20%;
+  padding-left: 20px;
+  img {
+    height: 90%;
+  }
+}
+.HeaderLink {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  a {
+    font-family: Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans,
+      Arial, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+.showOnDesktop {
+  display: block;
+  visibility: visible;
+}
+.showOnMobile {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 700px) {
+  .showOnMobile {
+    display: block;
+    visibility: visible;
+  }
+  .showOnDesktop {
+    display: none;
+    visibility: hidden;
+  }
+  .HeaderLink {
+    width: 20%;
+  }
+}
